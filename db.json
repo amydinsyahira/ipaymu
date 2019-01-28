@@ -1,0 +1,47 @@
+{
+  "register": {
+    "status": 200,
+    "centris_data": {
+      "register_200": "Selamat Anda telah berhasil terdaftar di iPaymu. No rekening Deposit Anda adalah *117900xxxxxxxxxx*.\nAnda bisa menggunakan layanan iPaymu TAG untuk:\n*1 Cek Saldo*\n*2 Top Up Saldo*\n*3 Pembayaran*\n*4 Penagihan Pembayaran*\nSilahkan ketik Angka untuk mengetahui informasi layanan tersebut."
+    }
+  },
+  "saldo": {
+    "success": {
+      "status": 200,
+      "centris_data": {
+        "saldo_200": "Halo Foo, saldo akun iPaymu Anda adalah Rp. 100.000 yang terbagi menjadi Saldo Merchant sebesar Rp. 50.000 dan Saldo Pembeli sebesar Rp. 50.000.\nTerima kasih."
+      }
+    },
+    "failed": {
+      "status": 500,
+      "centris_data": {
+        "saldo_500": "Maaf nomor Anda belum terdaftar di iPaymu"
+      }
+    }
+  },
+  "topup_saldo": {
+    "status": 200,
+    "centris_data": {
+      "topup_saldo_200": "Halo Foo, no rekening top up Anda adalah *1179000xxxxxxxxx*.\nSilahkan top up dengan transfer ke Bank CIMB Niaga (022) *1179000xxxxxxxxx* a.n IPAYMU FOO.\nTerima kasih."
+    }
+  },
+  "transfer_member": {
+    "step_1": {
+      "status": 200,
+      "centris_data": {
+        "sender": "Foo",
+        "receiver": "Barny",
+        "amount": 50000,
+        "_comment": "Halo Foo, Anda akan melakukan transfer ke Barny sebesar *Rp. 50.000*.\nUntuk mengkonfirmasi transfer Anda, silahkan balas *YA*"
+      }
+    },
+    "step_2": {
+      "status": 200,
+      "centris_data": {
+        "transaction_id": "300123",
+        "_comment": "Anda telah berhasil melakukan pembayaran dengan detil sebagai berikut:\nID Transaksi: *300123*\nNama Penerima: *Barny*\nJumlah Transfer: *Rp. 50.000*",
+        "_comment2": "Halo Barny, Anda telah menerima pembayaran dengan detil sebagai berikut:\nID Transaksi: *300123*\nNama Pengirim: *Foo*\nJumlah Transfer: *Rp. 50.000*"
+      }
+    }
+  }
+}
